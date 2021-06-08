@@ -111,7 +111,7 @@ class Deces {
             const d = deces[index];
 
             //envoyer a la bdd
-            const createResults = await User.findOrCreate({
+            const createResults = await User.findOrCreate({ // oui
                 where: { 
                 title: d.title,
                 age: d.age,

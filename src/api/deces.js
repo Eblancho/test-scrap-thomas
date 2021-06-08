@@ -22,6 +22,7 @@ router.get('/today', async (req, res) => {
   try {
     // Récupération des deces
     const list = await deces.getDeaths(year, month, day);
+    await deces.saveIntoDB(list);
     res.json(list);
   } catch (error) {
     console.log(error);

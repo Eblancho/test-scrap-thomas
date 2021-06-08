@@ -6,3 +6,9 @@ app.listen(port, () => {
   console.log(`Listening: http://localhost:${port}`);
   /* eslint-enable no-console */
 });
+
+
+
+
+//const tousMesUsersEnDB = await User.findAll();
+//console.log(tousMesUsersEnDB);
